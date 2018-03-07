@@ -50,6 +50,21 @@ You can modify the call to the plot function to produce either stack, line, or b
 ![Image](./examples/progression-line.png)
 ![Image](./examples/progression-stack.png)
 
+You can also select plot targets by modifying the function call to override the default 'targets' parameter:  
+
+
+You can get target names from your CSV data under the 'Function' column:
+```
+Function,CPU Time,CPU Time:Effective Time,CPU Time:Effective Time:Idle,CPU Time:Effective Time:Poor,CPU Time:Effective Time:Ok,CPU Time:Effective Time:Ideal,CPU Time:Effective Time:Over,CPU Time:Spin Time,CPU Time:Overhead Time,Instructions Retired,CPI Rate,CPU Frequency Ratio,Module,Function (Full),Source File,Start Address  
+[Loop at line 4015 in gwce_new],1.067502,1.067502,0.004009,1.063493,0.0,0.0,0.0,0.0,0.0,6390000000,0.411972,0.988732,adcirc_og,[Loop at line 4015 in gwce_new],timestep.F,0x4c2b82  
+[Loop at line 5354 in mom_eqs_new_nc],0.458074,0.458074,0.0,0.458074,0.0,0.0,0.0,0.0,0.0,2972500000,0.383516,0.997812,adcirc_og,[Loop at line 5354 in mom_eqs_new_nc],timestep.F,0x4d7602  
+[Outside any loop],0.347815,0.347815,0.009021,0.338794,0.0,0.0,0.0,0.0,0.0,1370000000,0.627737,0.991354,[Unknown],[Outside any loop],[Unknown],0x0  
+[Loop at line 1939 in pjac],0.262616,0.262616,0.0,0.262616,0.0,0.0,0.0,0.0,0.0,1622500000,0.403698,1.000000,adcirc_og,[Loop at line 1939 in pjac],itpackv.F,0x521b71  
+```
+From this data your target could be '[Loop at line 4015 in gwce_new]'  
+or you can pass in 'total' and set pct_time argument=False to show overall CPU time changes between reports
+![Image](./examples/progression-total.png)
+
 
 ### Prerequisites
 
