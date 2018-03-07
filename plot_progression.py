@@ -3,7 +3,7 @@ import pandas as pd
 import sys
 import os
 
-def plot_progression(csv_paths, style="bar", cutoff=("number", 4)):
+def plot_progression(csv_paths, kind="bar", cutoff=("number", 4)):
     """
         Plot either a line or a bar graph representing changes in where time
         is being spent with increasing MPI ranks
@@ -43,11 +43,22 @@ def plot_progression(csv_paths, style="bar", cutoff=("number", 4)):
     # Make sure that the data starts with most expensive column first
     net_data = net_data.sort_values(sorted_names[0], ascending=False)
     plot_data = net_data.transpose()
-    ax = plot_data.plot(kind="bar")
-    ax.set_ylim(0, 75)
-    ax.set_yticklabels(["%s%%" % pct for pct in ax.get_yticks()])
-    ax.set_xlabel("Number of Elements")
-    ax.set_ylabel("% of Total Time")
+    if kind == "stack":
+        ax = plt.stackplot(range(len(sorted_names)), [list(plot_data.iloc[:,a]) for a in range(len(plot_data.columns))], labels=plot_data.columns)
+        plt.legend(loc="lower right")
+        plt.xticks(range(len(sorted_names)), sorted_names, rotation='vertical')
+        locs, labels = plt.yticks()
+        plt.yticks(locs, ["%s%%" % a for a in locs])
+        plt.ylim(0,100)
+        plt.ylabel("% of Total Time")
+        plt.xlabel("Number of Elements")
+
+    else:
+        ax = plot_data.plot(kind=kind)
+        ax.set_ylim(0, 75)
+        ax.set_yticklabels(["%s%%" % pct for pct in ax.get_yticks()])
+        ax.set_xlabel("Number of Elements")
+        ax.set_ylabel("% of Total Time")
 
 
 csv_names = []
@@ -58,5 +69,5 @@ for i in range(1,len(sys.argv)):
     csv_names.append(os.path.abspath(sys.argv[i]))
 
 #plot_pie(csv_names[0])
-plot_progression(csv_names)
+plot_progression(csv_names, kind="stack")
 plt.show()
