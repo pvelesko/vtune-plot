@@ -1,0 +1,104 @@
+Function,CPU Time,CPU Time:Effective Time,CPU Time:Effective Time:Idle,CPU Time:Effective Time:Poor,CPU Time:Effective Time:Ok,CPU Time:Effective Time:Ideal,CPU Time:Effective Time:Over,CPU Time:Spin Time,CPU Time:Overhead Time,Instructions Retired,CPI Rate,CPU Frequency Ratio,Module,Function (Full),Source File,Start Address
+[Loop at line 4015 in gwce_new],4.445420,4.445420,0.001002,4.444418,0.0,0.0,0.0,0.0,0.0,25862500000,0.430256,1.003608,adcirc_og,[Loop at line 4015 in gwce_new],timestep.F,0x4c2b82
+[Loop at line 5354 in mom_eqs_new_nc],1.894441,1.894441,0.0,1.894441,0.0,0.0,0.0,0.0,0.0,11795000000,0.399534,0.997354,adcirc_og,[Loop at line 5354 in mom_eqs_new_nc],timestep.F,0x4d7602
+[Loop at line 1939 in pjac],1.149695,1.149695,0.0,1.149695,0.0,0.0,0.0,0.0,0.0,5927500000,0.483762,1.000000,adcirc_og,[Loop at line 1939 in pjac],itpackv.F,0x521b71
+[Outside any loop],1.118622,1.118622,0.011026,1.107596,0.0,0.0,0.0,0.0,0.0,4452500000,0.612577,0.977599,[Unknown],[Outside any loop],[Unknown],0x0
+[Loop at line 3149 in timestep],0.280658,0.280658,0.0,0.280658,0.0,0.0,0.0,0.0,0.0,845000000,0.745562,0.900000,adcirc_og,[Loop at line 3149 in timestep],timestep.F,0x4aac39
+[Loop at line 1435 in apply2dbottomfriction],0.211496,0.211496,0.0,0.211496,0.0,0.0,0.0,0.0,0.0,635000000,0.909449,1.094787,adcirc_og,[Loop at line 1435 in apply2dbottomfriction],nodalattr.F,0x51a1d8
+[Loop at line 2826 in sdot],0.201472,0.201472,0.0,0.201472,0.0,0.0,0.0,0.0,0.0,630000000,0.797619,1.000000,adcirc_og,[Loop at line 2826 in sdot],itpackv.F,0x521ffe
+[Loop at line 2826 in sdot],0.183430,0.183430,0.0,0.183430,0.0,0.0,0.0,0.0,0.0,502500000,0.880597,0.967213,adcirc_og,[Loop at line 2826 in sdot],itpackv.F,0x522076
+[Loop at line 2826 in sdot],0.181425,0.181425,0.0,0.181425,0.0,0.0,0.0,0.0,0.0,602500000,0.709544,0.944751,adcirc_og,[Loop at line 2826 in sdot],itpackv.F,0x5220ef
+[Loop at line 5697 in mom_eqs_new_nc],0.169397,0.169397,0.0,0.169397,0.0,0.0,0.0,0.0,0.0,1207500000,0.345756,0.988166,adcirc_og,[Loop at line 5697 in mom_eqs_new_nc],timestep.F,0x4d8aa1
+[Loop at line 567 in itjcg],0.150352,0.150352,0.0,0.150352,0.0,0.0,0.0,0.0,0.0,1002500000,0.389027,1.040000,adcirc_og,[Loop at line 567 in itjcg],itpackv.F,0x5224a0
+[Loop at line 5672 in mom_eqs_new_nc],0.136320,0.136320,0.0,0.136320,0.0,0.0,0.0,0.0,0.0,827500000,0.438066,1.066176,adcirc_og,[Loop at line 5672 in mom_eqs_new_nc],timestep.F,0x4d85b6
+[Loop at line 2391 in scal],0.132310,0.132310,0.0,0.132310,0.0,0.0,0.0,0.0,0.0,497500000,0.633166,0.954545,adcirc_og,[Loop at line 2391 in scal],itpackv.F,0x526aad
+[Loop at line 2826 in sdot],0.127298,0.127298,0.001002,0.126296,0.0,0.0,0.0,0.0,0.0,447500000,0.743017,1.047244,adcirc_og,[Loop at line 2826 in sdot],itpackv.F,0x521f6a
+[Loop at line 1977 in pmult],0.123289,0.123289,0.0,0.123289,0.0,0.0,0.0,0.0,0.0,530000000,0.547170,0.943089,adcirc_og,[Loop at line 1977 in pmult],itpackv.F,0x5274d7
+[Loop at line 2826 in sdot],0.122287,0.122287,0.0,0.122287,0.0,0.0,0.0,0.0,0.0,347500000,0.906475,1.032787,adcirc_og,[Loop at line 2826 in sdot],itpackv.F,0x521ef5
+[Loop at line 1939 in pjac],0.105247,0.105247,0.0,0.105247,0.0,0.0,0.0,0.0,0.0,602500000,0.443983,1.019048,adcirc_og,[Loop at line 1939 in pjac],itpackv.F,0x51e718
+[Loop at line 2442 in unscal],0.103242,0.103242,0.0,0.103242,0.0,0.0,0.0,0.0,0.0,562500000,0.520000,1.135922,adcirc_og,[Loop at line 2442 in unscal],itpackv.F,0x51f16c
+[Loop at line 4328 in gwce_new],0.097228,0.097228,0.0,0.097228,0.0,0.0,0.0,0.0,0.0,525000000,0.400000,0.865979,adcirc_og,[Loop at line 4328 in gwce_new],timestep.F,0x4c4710
+[Loop at line 295 in timestep],0.092216,0.092216,0.0,0.092216,0.0,0.0,0.0,0.0,0.0,462500000,0.502703,1.010870,adcirc_og,[Loop at line 295 in timestep],timestep.F,0x4a72c0
+[Loop at line 5910 in mom_eqs_new_nc],0.062146,0.062146,0.0,0.062146,0.0,0.0,0.0,0.0,0.0,430000000,0.360465,1.000000,adcirc_og,[Loop at line 5910 in mom_eqs_new_nc],timestep.F,0x4d917b
+[Loop at line 2365 in scal],0.038089,0.038089,0.0,0.038089,0.0,0.0,0.0,0.0,0.0,310000000,0.370968,1.210526,adcirc_og,[Loop at line 2365 in scal],itpackv.F,0x52634c
+[Loop at line 3321 in timestep],0.037087,0.037087,0.0,0.037087,0.0,0.0,0.0,0.0,0.0,170000000,0.558824,1.027027,adcirc_og,[Loop at line 3321 in timestep],timestep.F,0x4ab6b4
+[Loop at line 2312 in scal],0.035082,0.035082,0.0,0.035082,0.0,0.0,0.0,0.0,0.0,257500000,0.368932,1.085714,adcirc_og,[Loop at line 2312 in scal],itpackv.F,0x52603e
+[Loop at line 2373 in scal],0.034080,0.034080,0.0,0.034080,0.0,0.0,0.0,0.0,0.0,37500000,1.466667,0.647059,adcirc_og,[Loop at line 2373 in scal],itpackv.F,0x526430
+[Loop at line 2826 in sdot],0.033078,0.033078,0.0,0.033078,0.0,0.0,0.0,0.0,0.0,82500000,0.969697,0.969697,adcirc_og,[Loop at line 2826 in sdot],itpackv.F,0x527984
+[Loop@0x6819e1 in __intel_avx_rep_memset],0.031073,0.031073,0.0,0.031073,0.0,0.0,0.0,0.0,0.0,70000000,0.750000,0.677419,adcirc_og,[Loop@0x6819e1 in __intel_avx_rep_memset],[Unknown],0x6819e1
+[Loop at line 2826 in sdot],0.028066,0.028066,0.0,0.028066,0.0,0.0,0.0,0.0,0.0,72500000,1.068966,1.107143,adcirc_og,[Loop at line 2826 in sdot],itpackv.F,0x52729b
+[Loop at line 2451 in unscal],0.026061,0.026061,0.0,0.026061,0.0,0.0,0.0,0.0,0.0,340000000,0.191176,1.000000,adcirc_og,[Loop at line 2451 in unscal],itpackv.F,0x51f4ac
+[Loop at line 2912 in scopy],0.024056,0.024056,0.0,0.024056,0.0,0.0,0.0,0.0,0.0,92500000,0.486486,0.750000,adcirc_og,[Loop at line 2912 in scopy],itpackv.F,0x524a00
+[Loop at line 5961 in mom_eqs_new_nc],0.021049,0.021049,0.0,0.021049,0.0,0.0,0.0,0.0,0.0,80000000,0.875000,1.333333,adcirc_og,[Loop at line 5961 in mom_eqs_new_nc],timestep.F,0x4d9326
+[Loop at line 2383 in scal],0.020047,0.020047,0.0,0.020047,0.0,0.0,0.0,0.0,0.0,30000000,1.333333,0.800000,adcirc_og,[Loop at line 2383 in scal],itpackv.F,0x526900
+[Loop at line 2618 in zbrent],0.020047,0.020047,0.0,0.020047,0.0,0.0,0.0,0.0,0.0,72500000,0.551724,0.800000,adcirc_og,[Loop at line 2618 in zbrent],itpackv.F,0x52435c
+[Loop at line 5770 in mom_eqs_new_nc],0.017040,0.017040,0.0,0.017040,0.0,0.0,0.0,0.0,0.0,47500000,0.631579,0.705882,adcirc_og,[Loop at line 5770 in mom_eqs_new_nc],timestep.F,0x4d8faf
+[Loop at line 3321 in timestep],0.016038,0.016038,0.0,0.016038,0.0,0.0,0.0,0.0,0.0,185000000,0.337838,1.562500,adcirc_og,[Loop at line 3321 in timestep],timestep.F,0x4ab6ee
+[Loop at line 2431 in unscal],0.015035,0.015035,0.0,0.015035,0.0,0.0,0.0,0.0,0.0,22500000,2.000000,1.200000,adcirc_og,[Loop at line 2431 in unscal],itpackv.F,0x51ee22
+[Loop at line 4341 in gwce_new],0.015035,0.015035,0.0,0.015035,0.0,0.0,0.0,0.0,0.0,97500000,0.743590,1.933333,adcirc_og,[Loop at line 4341 in gwce_new],timestep.F,0x4c481a
+[Loop at line 647 in peror],0.015035,0.015035,0.0,0.015035,0.0,0.0,0.0,0.0,0.0,45000000,0.722222,0.866667,adcirc_og,[Loop at line 647 in peror],itpackv.F,0x527143
+[Loop at line 2376 in scal],0.014033,0.014033,0.0,0.014033,0.0,0.0,0.0,0.0,0.0,15000000,4.000000,1.714286,adcirc_og,[Loop at line 2376 in scal],itpackv.F,0x5265a0
+[Loop at line 659 in peror],0.014033,0.014033,0.0,0.014033,0.0,0.0,0.0,0.0,0.0,42500000,0.941176,1.142857,adcirc_og,[Loop at line 659 in peror],itpackv.F,0x527803
+[Loop at line 4557 in gwce_new],0.012028,0.012028,0.0,0.012028,0.0,0.0,0.0,0.0,0.0,52500000,0.380952,0.666667,adcirc_og,[Loop at line 4557 in gwce_new],timestep.F,0x4c5469
+[Loop at line 5672 in mom_eqs_new_nc],0.012028,0.012028,0.0,0.012028,0.0,0.0,0.0,0.0,0.0,77500000,0.387097,1.000000,adcirc_og,[Loop at line 5672 in mom_eqs_new_nc],timestep.F,0x4d84a6
+[Loop at line 4328 in gwce_new],0.011026,0.011026,0.0,0.011026,0.0,0.0,0.0,0.0,0.0,72500000,0.344828,0.909091,adcirc_og,[Loop at line 4328 in gwce_new],timestep.F,0x4c464b
+[Loop at line 1570 in timestep],0.010023,0.010023,0.0,0.010023,0.0,0.0,0.0,0.0,0.0,17500000,1.714286,1.200000,adcirc_og,[Loop at line 1570 in timestep],timestep.F,0x4a9740
+[Loop at line 2379 in scal],0.010023,0.010023,0.0,0.010023,0.0,0.0,0.0,0.0,0.0,7500000,3.666667,1.100000,adcirc_og,[Loop at line 2379 in scal],itpackv.F,0x526721
+[Loop at line 330 in jcg],0.010023,0.010023,0.0,0.010023,0.0,0.0,0.0,0.0,0.0,15000000,0.833333,0.500000,adcirc_og,[Loop at line 330 in jcg],itpackv.F,0x51f890
+[Loop at line 2912 in scopy],0.009021,0.009021,0.0,0.009021,0.0,0.0,0.0,0.0,0.0,37500000,0.533333,0.888889,adcirc_og,[Loop at line 2912 in scopy],itpackv.F,0x526e40
+[Loop at line 2912 in scopy],0.008019,0.008019,0.0,0.008019,0.0,0.0,0.0,0.0,0.0,37500000,0.733333,1.375000,adcirc_og,[Loop at line 2912 in scopy],itpackv.F,0x520b20
+[Loop at line 4367 in gwce_new],0.008019,0.008019,0.0,0.008019,0.0,0.0,0.0,0.0,0.0,95000000,0.236842,1.125000,adcirc_og,[Loop at line 4367 in gwce_new],timestep.F,0x4c4ad7
+[Loop at line 2428 in unscal],0.007016,0.007016,0.0,0.007016,0.0,0.0,0.0,0.0,0.0,30000000,0.250000,0.428571,adcirc_og,[Loop at line 2428 in unscal],itpackv.F,0x51eca0
+[Loop at line 4524 in gwce_new],0.007016,0.007016,0.0,0.007016,0.0,0.0,0.0,0.0,0.0,22500000,0.555556,0.714286,adcirc_og,[Loop at line 4524 in gwce_new],timestep.F,0x4c5135
+[Loop at line 2455 in unscal],0.006014,0.006014,0.0,0.006014,0.0,0.0,0.0,0.0,0.0,17500000,0.857143,1.000000,adcirc_og,[Loop at line 2455 in unscal],itpackv.F,0x51f5a0
+[Loop at line 2912 in scopy],0.006014,0.006014,0.0,0.006014,0.0,0.0,0.0,0.0,0.0,45000000,0.444444,1.333333,adcirc_og,[Loop at line 2912 in scopy],itpackv.F,0x528100
+[Loop at line 1939 in pjac],0.005012,0.005012,0.0,0.005012,0.0,0.0,0.0,0.0,0.0,20000000,0.875000,1.400000,adcirc_og,[Loop at line 1939 in pjac],itpackv.F,0x521d30
+[Loop at line 493 in timestep],0.005012,0.005012,0.0,0.005012,0.0,0.0,0.0,0.0,0.0,15000000,0.0,0.0,adcirc_og,[Loop at line 493 in timestep],timestep.F,0x4a77e5
+[Loop at line 2434 in unscal],0.004009,0.004009,0.0,0.004009,0.0,0.0,0.0,0.0,0.0,22500000,0.444444,1.000000,adcirc_og,[Loop at line 2434 in unscal],itpackv.F,0x51ef60
+[Loop at line 4520 in gwce_new],0.004009,0.004009,0.0,0.004009,0.0,0.0,0.0,0.0,0.0,22500000,0.444444,1.000000,adcirc_og,[Loop at line 4520 in gwce_new],timestep.F,0x4c500b
+[Loop@0x60bda0 in for_write_seq_fmt_xmit],0.004009,0.004009,0.0,0.004009,0.0,0.0,0.0,0.0,0.0,20000000,0.500000,1.000000,adcirc_og,[Loop@0x60bda0 in for_write_seq_fmt_xmit],[Unknown],0x60bda0
+[Loop at line 1031 in determ],0.003007,0.003007,0.0,0.003007,0.0,0.0,0.0,0.0,0.0,5000000,1.500000,1.000000,adcirc_og,[Loop at line 1031 in determ],itpackv.F,0x524700
+[Loop at line 5672 in mom_eqs_new_nc],0.003007,0.003007,0.0,0.003007,0.0,0.0,0.0,0.0,0.0,40000000,0.187500,1.000000,adcirc_og,[Loop at line 5672 in mom_eqs_new_nc],timestep.F,0x4d844e
+[Loop at line 1022 in determ],0.002005,0.002005,0.0,0.002005,0.0,0.0,0.0,0.0,0.0,7500000,1.333333,2.000000,adcirc_og,[Loop at line 1022 in determ],itpackv.F,0x524689
+[Loop at line 1031 in determ],0.002005,0.002005,0.0,0.002005,0.0,0.0,0.0,0.0,0.0,5000000,1.500000,1.500000,adcirc_og,[Loop at line 1031 in determ],itpackv.F,0x52478d
+[Loop at line 1938 in itjcg],0.002005,0.002005,0.0,0.002005,0.0,0.0,0.0,0.0,0.0,20000000,0.250000,1.000000,adcirc_og,[Loop at line 1938 in itjcg],itpackv.F,0x521a9d
+[Loop at line 2442 in unscal],0.002005,0.002005,0.0,0.002005,0.0,0.0,0.0,0.0,0.0,2500000,1.000000,0.500000,adcirc_og,[Loop at line 2442 in unscal],itpackv.F,0x51f310
+[Loop@0x6563d2 in cvtas_t_to_a],0.002005,0.002005,0.002005,0.0,0.0,0.0,0.0,0.0,0.0,5000000,3.000000,3.000000,adcirc_og,[Loop@0x6563d2 in cvtas_t_to_a],[Unknown],0x6563d2
+[Loop at line 1939 in pjac],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,0,,1.000000,adcirc_og,[Loop at line 1939 in pjac],itpackv.F,0x51e8e0
+[Loop at line 1977 in pmult],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop at line 1977 in pmult],itpackv.F,0x5276a0
+[Loop at line 2321 in read_input],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,0,,1.000000,adcirc_og,[Loop at line 2321 in read_input],read_input.F,0x547d1c
+[Loop at line 2391 in scal],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,2500000,1.000000,1.000000,adcirc_og,[Loop at line 2391 in scal],itpackv.F,0x526c70
+[Loop at line 337 in jcg],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,adcirc_og,[Loop at line 337 in jcg],itpackv.F,0x51fa1f
+[Loop at line 4356 in gwce_new],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop at line 4356 in gwce_new],timestep.F,0x4c4a23
+[Loop at line 4557 in gwce_new],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,adcirc_og,[Loop at line 4557 in gwce_new],timestep.F,0x4c55ed
+[Loop at line 5961 in mom_eqs_new_nc],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,0,,1.000000,adcirc_og,[Loop at line 5961 in mom_eqs_new_nc],timestep.F,0x4d9590
+[Loop at line 658 in peror],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,adcirc_og,[Loop at line 658 in peror],itpackv.F,0x5273cb
+[Loop at line 659 in peror],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,adcirc_og,[Loop at line 659 in peror],itpackv.F,0x527909
+[Loop@0x5d2016 in for__resource_release],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,5000000,1.000000,2.000000,adcirc_og,[Loop@0x5d2016 in for__resource_release],[Unknown],0x5d2016
+[Loop@0x60d1b0 in for_write_seq_fmt_xmit],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,5000000,0.0,0.0,adcirc_og,[Loop@0x60d1b0 in for_write_seq_fmt_xmit],[Unknown],0x60d1b0
+[Loop@0x641dad in cvt_integer_to_text],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop@0x641dad in cvt_integer_to_text],[Unknown],0x641dad
+[Loop@0x64cc9b in cvtas_a_to_t],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,2500000,1.000000,1.000000,adcirc_og,[Loop@0x64cc9b in cvtas_a_to_t],[Unknown],0x64cc9b
+[Loop@0x655e8d in cvtas_t_to_a],0.001002,0.001002,0.001002,0.0,0.0,0.0,0.0,0.0,0.0,10000000,0.0,0.0,adcirc_og,[Loop@0x655e8d in cvtas_t_to_a],[Unknown],0x655e8d
+[Loop@0x65a5c7 in cvtas_t_to_a],0.001002,0.001002,0.0,0.001002,0.0,0.0,0.0,0.0,0.0,0,0.0,0.0,adcirc_og,[Loop@0x65a5c7 in cvtas_t_to_a],[Unknown],0x65a5c7
+[Loop at line 1031 in determ],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop at line 1031 in determ],itpackv.F,0x523eae
+[Loop at line 1031 in determ],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop at line 1031 in determ],itpackv.F,0x523e00
+[Loop at line 2390 in scal],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop at line 2390 in scal],itpackv.F,0x526a2e
+[Loop at line 2634 in zbrent],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,1.000000,,adcirc_og,[Loop at line 2634 in zbrent],itpackv.F,0x524345
+[Loop at line 2658 in read_input],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop at line 2658 in read_input],read_input.F,0x548eab
+[Loop at line 3653 in gwce_new],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop at line 3653 in gwce_new],timestep.F,0x4bdbd5
+[Loop at line 4328 in gwce_new],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,15000000,0.500000,,adcirc_og,[Loop at line 4328 in gwce_new],timestep.F,0x4c45fd
+[Loop at line 611 in neighb],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop at line 611 in neighb],adcirc.F,0x575a22
+[Loop at line 666 in neighb],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5000000,0.0,0.0,adcirc_og,[Loop at line 666 in neighb],adcirc.F,0x575f17
+[Loop at line 710 in neighb],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop at line 710 in neighb],adcirc.F,0x5764cd
+[Loop at line 976 in spread_in_coordinate],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop at line 976 in spread_in_coordinate],kdtree2.F,0x50a316
+[Loop at line 976 in spread_in_coordinate],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop at line 976 in spread_in_coordinate],kdtree2.F,0x50c20e
+[Loop@0x5d1eb4 in for__resource_acquire],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5000000,0.0,0.0,adcirc_og,[Loop@0x5d1eb4 in for__resource_acquire],[Unknown],0x5d1eb4
+[Loop@0x5e3683 in for_read_seq_lis_xmit],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop@0x5e3683 in for_read_seq_lis_xmit],[Unknown],0x5e3683
+[Loop@0x5e4f9c in rs_find_field],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,5000000,0.0,0.0,adcirc_og,[Loop@0x5e4f9c in rs_find_field],[Unknown],0x5e4f9c
+[Loop@0x620193 in for_trim],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop@0x620193 in for_trim],[Unknown],0x620193
+[Loop@0x6201ae in for_trim],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop@0x6201ae in for_trim],[Unknown],0x6201ae
+[Loop@0x62ccf8 in cvt_text_to_integer],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop@0x62ccf8 in cvt_text_to_integer],[Unknown],0x62ccf8
+[Loop@0x641f0a in cvt_integer_to_text],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,1.000000,,adcirc_og,[Loop@0x641f0a in cvt_integer_to_text],[Unknown],0x641f0a
+[Loop@0x6444d9 in cvt_ieee_t_to_text_ex],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop@0x6444d9 in cvt_ieee_t_to_text_ex],[Unknown],0x6444d9
+[Loop@0x65623c in cvtas_t_to_a],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,7500000,0.0,0.0,adcirc_og,[Loop@0x65623c in cvtas_t_to_a],[Unknown],0x65623c
+[Loop@0x656431 in cvtas_t_to_a],0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,2500000,0.0,0.0,adcirc_og,[Loop@0x656431 in cvtas_t_to_a],[Unknown],0x656431
