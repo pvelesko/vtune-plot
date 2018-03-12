@@ -65,6 +65,75 @@ From this data your target could be '[Loop at line 4015 in gwce_new]'
 or you can pass in 'total' and set pct_time argument=False to show overall CPU time changes between reports
 ![Image](./examples/progression-total.png)
 
+### Jupyter Notebook
+You can use VtuneCSV class to parse multiple CSV files from vtune and and use the get_frame() function  
+
+Import the data, look at the available fields
+```
+topdown_files = os.listdir("./data/scaling/topdown")
+topdown_files = ["./data/scaling/topdown/%s" % a for a in topdown_files]
+
+topdown = VtuneCSV(topdown_files)
+topdown.data[0].head()
+```
+![Image](./examples/jup1.png)
+```
+df = topdown.get_frame("4015 in gwce_new", "CPU Time:Self")
+df.plot()
+plt.show()
+```
+![Image](./examples/jup2.png)
+
+Check what functions and data are present for reading
+```
+hwevents = VtuneCSV(["./data/scaling/hwevents/1696.csv", "./data/scaling/hwevents/6772.csv"])
+hwevents.data[0].head()
+```
+![Image](./examples/jup3.png)
+
+Plot the selected data
+```
+df = hwevents.get_frame("4015 in gwce_new", "Hardware Event Count:CPU_CLK_UNHALTED.THREAD")
+df.plot(kind='bar')
+plt.show()
+```
+![Image](./examples/jup4.png)
+
+### Generating print-style scaling plots
+```
+topdown_files = os.listdir("./data/scaling/topdown")
+topdown_files = ["./data/scaling/topdown/%s" % a for a in topdown_files]
+topdown = VtuneCSV(topdown_files)
+
+csv_names = [os.path.basename(a).split(".csv")[0] for a in topdown_files]
+metric="CPU Time:Self"
+df1 = topdown.get_frame("1939 in pjac", metric)
+df2 = topdown.get_frame("4015 in gwce_new", metric)
+df3 = topdown.get_frame("5354 in mom_eqs_new_nc", metric)
+df4 = topdown.get_frame("Outside any loop", 'CPU Time:Self')
+
+n = len(df1)
+ax1 = plt.plot(np.arange(n),df1, linewidth=1, color='black', marker='v', markersize=10, linestyle='--')
+ax2 = plt.plot(np.arange(n),df2, linewidth=1, color='black', marker="^", markersize=10, linestyle='--')
+ax3 = plt.plot(np.arange(n),df3, linewidth=1, color='black', marker=">", markersize=10, linestyle='--')
+ax4 = plt.plot(np.arange(n),df4, linewidth=1, color='black', marker="<", markersize=10, linestyle='--')
+
+func_names = [df1.index.name, df2.index.name, df3.index.name, df4.index.name]
+lgd = plt.legend(func_names, loc='best')
+plt.xticks(np.arange(len(df1.index)), df1.index, rotation='vertical')
+plt.xlabel("Domain Size")
+plt.ylabel("CPU Time:Self")
+plt.title("")
+
+plt.show()
+```
+![Image](./examples/jupypter.png)
+
+
+
+
+
+to get a custom pandas DataFrame object 
 
 ### Restrictions
 *CSV report names are expected to be integers. The result will be displayed in ascending file name order.
