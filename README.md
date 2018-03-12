@@ -127,7 +127,7 @@ plt.title("")
 
 plt.show()
 ```
-![Image](./examples/jupypter.png)
+![Image](./examples/jupyter.png)
 
 
 
