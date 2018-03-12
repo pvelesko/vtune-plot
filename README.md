@@ -66,6 +66,11 @@ or you can pass in 'total' and set pct_time argument=False to show overall CPU t
 ![Image](./examples/progression-total.png)
 
 
+### Restrictions
+*CSV report names are expected to be integers. The result will be displayed in ascending file name order.
+
+
+
 ### Prerequisites
 
 Python 2.7  
