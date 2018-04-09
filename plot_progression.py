@@ -1,9 +1,11 @@
+#!/usr/bin/env python
 import matplotlib.pyplot as plt
 import pandas as pd
 import sys
 import os
+from VtuneCSV import *
 
-def plot_progression(csv_paths, total_pct=True, kind="bar", cutoff=("number", 4), targets = []):
+def plot_progression(csv_paths, total_pct=True, kind="bar", cutoff=("number", 4), target_functions = [], target_data = []):
     """
         Plot either a line or a bar graph representing changes in where time
         is being spent with increasing MPI ranks
@@ -11,13 +13,15 @@ def plot_progression(csv_paths, total_pct=True, kind="bar", cutoff=("number", 4)
     """
     net_data = pd.DataFrame()
     names = []
+#    import ipdb; ipdb.set_trace()
     for i in range(0,len(csv_paths)):
         percent_cutoff = cutoff[1]/100 # percentage of top consumer loops to display
         num_cutoff = cutoff[1] # number of loops to display
-        data = pd.read_csv(csv_paths[i], index_col='Function')[['CPU Time']]
+        data = pd.read_csv(csv_paths[i], index_col='Function Stack')
+        #data = pd.read_csv(csv_paths[i], index_col='Function')[['CPU Time']]
         names.append(os.path.basename(csv_paths[i]).strip(".csv"))
-        time_total = data[['CPU Time']].sum()[0]
-        data.insert(loc=1, column='% of Total', value=data['CPU Time']/time_total*100)
+        #time_total = data[['CPU Time']].sum()[0]
+        #data.insert(loc=1, column='% of Total', value=data['CPU Time']/time_total*100)
 
         other = pd.DataFrame(index=['Other Loops'], columns=data.columns)
         if cutoff[0] == "number":
@@ -30,14 +34,13 @@ def plot_progression(csv_paths, total_pct=True, kind="bar", cutoff=("number", 4)
             sys.exit("Cutoff must be either 'number' or 'percentage'")
         data_cutoff = data_cutoff.append(other)
 
-        #from IPython import embed; embed()
-        if targets != []:
-            if targets[0] == 'total':
+        if target_functions != []:
+            if target_functions[0] == 'total':
                 data_cutoff = pd.DataFrame(data.sum())
                 data_cutoff.columns = ['total']
                 data_cutoff = data_cutoff.transpose()
             else:
-                data_cutoff = data.loc[targets]
+                data_cutoff = data.transpose().loc[target_functions]
 
 
         if total_pct == True:
@@ -86,12 +89,32 @@ def plot_progression(csv_paths, total_pct=True, kind="bar", cutoff=("number", 4)
 csv_names = []
 for i in range(1,len(sys.argv)):
     if (not os.path.exists(sys.argv[i])):
-        print("File %s not found" % csv_name)
+        print("File %s not found" % sys.argv[i])
         quit()
     csv_names.append(os.path.abspath(sys.argv[i]))
 
-#plot_pie(csv_names[0])
-#plot_progression(csv_names, kind="stack")
-#plot_progression(csv_names, kind="line", targets = ['[Loop at line 4015 in gwce_new]', '[Outside any loop]'])
-plot_progression(csv_names, kind="line", total_pct=False,targets = ['total'])
-plt.show()
+if __name__ == "__main__":
+    import sys
+    from IPython import embed
+    assert(len(sys.argv) > 1)
+    csv = VtuneCSV(sys.argv[1:])
+    index_list = list(csv.data[0].index)
+    column_list = list(csv.data[0].columns)
+    print("************************************************")
+    print("Possibe Loops/Functions\n")
+    print("************************************************")
+    for a in index_list:
+        print a
+    print("************************************************")
+    print("Possibe Metrics")
+    print("************************************************")
+    for a in column_list:
+        print a
+    embed()
+
+    #plot_pie(csv_names[0])
+    #plot_progression(csv_names, kind="stack")
+    #plot_progression(csv_names, kind="line", targets = ['[Loop at line 4015 in gwce_new]', '[Outside any loop]'])
+    #plot_progression(csv_names, kind="line", total_pct=False,targets = ['total'])
+    #plot_progression(csv_names, kind="line", total_pct=False,targets = ['Hardware Event Count:MEM_LOAD_RETIRED.L2_HIT_PS', 'Hardware Event Count:INST_RETIRED.ANY'])
+    #plt.show()
